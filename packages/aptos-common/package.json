@@ -37,7 +37,7 @@
     "@aptosis/aptos-client": "^0.0.5",
     "@aptosis/aptos-typed-api": "^0.0.5",
     "@aptosis/faucet-client": "^0.0.5",
-    "@movingco/leb128": "^0.1.51",
+    "@movingco/leb128": "^0.1.54",
     "@vespaiach/axios-fetch-adapter": "^0.3.0",
     "aptos": "^1.2.0",
     "axios": "^0.27.2",
@@ -45,7 +45,7 @@
     "tslib": "^2.4.0"
   },
   "devDependencies": {
-    "@movingco/core": "^0.1.51",
+    "@movingco/core": "^0.1.54",
     "@saberhq/tsconfig": "^2.0.2",
     "jsbi": "^4.3.0",
     "typescript": "^4.7.4"
