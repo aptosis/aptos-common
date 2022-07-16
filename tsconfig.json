@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@saberhq/tsconfig/tsconfig.root.json",
+  "include": ["packages/**/*.spec.ts", "jest.config.mjs", ".eslintrc.cjs"],
+  "references": [
+    { "path": "packages/aptos-api/" },
+    { "path": "packages/aptos-client/" },
+    { "path": "packages/aptos-typed-api/" },
+    { "path": "packages/faucet-client/" }
+  ]
+}

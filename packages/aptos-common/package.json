@@ -1,0 +1,60 @@
+{
+  "name": "@aptosis/aptos-common",
+  "version": "0.0.0",
+  "description": "Aptos packages for MovingKit.",
+  "author": "Ian Macalinao <ian@aptos.is>",
+  "homepage": "https://github.com/aptosis/aptos-common#readme",
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "src/",
+    "dist/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aptosis/aptos-common.git"
+  },
+  "scripts": {
+    "build": "tsc && tsc --project tsconfig.cjs.json"
+  },
+  "bugs": {
+    "url": "https://github.com/aptosis/aptos-common/issues"
+  },
+  "dependencies": {
+    "@aptosis/aptos-api": "^0.0.5",
+    "@aptosis/aptos-client": "^0.0.5",
+    "@aptosis/aptos-typed-api": "^0.0.5",
+    "@aptosis/faucet-client": "^0.0.5",
+    "@movingco/leb128": "^0.1.51",
+    "@vespaiach/axios-fetch-adapter": "^0.3.0",
+    "aptos": "^1.2.0",
+    "axios": "^0.27.2",
+    "buffer": "^6.0.3",
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "@movingco/core": "^0.1.51",
+    "@saberhq/tsconfig": "^2.0.2",
+    "jsbi": "^4.3.0",
+    "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "@movingco/core": "^0.1.51",
+    "jsbi": "^4.3.0"
+  },
+  "typedoc": {
+    "readmeFile": "./README.md"
+  }
+}
