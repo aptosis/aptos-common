@@ -6,7 +6,7 @@
   "entryPointStrategy": "packages",
   "includes": "packages/",
   "readme": "./README.md",
-  "name": "Aptos TypeScript API Wrapper",
-  "gaID": "G-WYT5TL6CE2",
-  "cname": "aptos-api.aptos.is"
+  "name": "Aptos Common",
+  "gaID": "G-61N53PK4KF",
+  "cname": "aptos-common.aptos.is"
 }
