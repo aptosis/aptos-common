@@ -37,6 +37,7 @@
     "@aptosis/aptos-client": "^0.0.8",
     "@aptosis/aptos-typed-api": "^0.0.8",
     "@aptosis/faucet-client": "^0.0.8",
+    "@movingco/core": "^0.2.0",
     "@movingco/leb128": "^0.2.0",
     "@movingco/sha3": "^0.2.0",
     "@vespaiach/axios-fetch-adapter": "^0.3.0",
@@ -46,13 +47,11 @@
     "tweetnacl": "^1.0.3"
   },
   "devDependencies": {
-    "@movingco/core": "^0.2.0",
     "@saberhq/tsconfig": "^2.0.3",
     "jsbi": "^4.3.0",
     "typescript": "^4.7.4"
   },
   "peerDependencies": {
-    "@movingco/core": "^0.2.0",
     "jsbi": "^4.3.0"
   },
   "typedoc": {
