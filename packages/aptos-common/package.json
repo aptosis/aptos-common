@@ -38,11 +38,12 @@
     "@aptosis/aptos-typed-api": "^0.0.8",
     "@aptosis/faucet-client": "^0.0.8",
     "@movingco/leb128": "^0.2.0",
+    "@movingco/sha3": "^0.2.0",
     "@vespaiach/axios-fetch-adapter": "^0.3.0",
-    "aptos": "^1.2.0",
     "axios": "^0.27.2",
     "buffer": "^6.0.3",
-    "tslib": "^2.4.0"
+    "tslib": "^2.4.0",
+    "tweetnacl": "^1.0.3"
   },
   "devDependencies": {
     "@movingco/core": "^0.2.0",
