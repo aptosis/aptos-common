@@ -2,6 +2,8 @@
 
 A lightweight version of the Aptos SDK.
 
+Most of the features from the official Aptos SDK have been ported over. The priority for this is bundle size.
+
 ## Releases
 
 To release a new version of this repo, run:
