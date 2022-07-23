@@ -1,4 +1,5 @@
 export * from "./account.js";
+export * from "./client/index.js";
 export * from "./signingMessage.js";
 export * from "./testCoin.js";
 
