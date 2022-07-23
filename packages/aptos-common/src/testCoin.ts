@@ -7,7 +7,7 @@ const TEST_COIN_INFO: CoinInfo = {
   logoURI:
     "https://raw.githubusercontent.com/aptosis/aptosis-coin-list/master/assets/devnet/apt.svg",
   decimals: 4,
-  address: "0x1::TestCoin::TestCoin",
+  address: "0x1::test_coin::TestCoin",
   chainId: ChainId.AptosDevnet,
 };
 
