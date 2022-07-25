@@ -42,7 +42,6 @@
     "@movingco/sha3": "^0.3.0",
     "@vespaiach/axios-fetch-adapter": "^0.3.0",
     "axios": "^0.27.2",
-    "buffer": "^6.0.3",
     "tslib": "^2.4.0",
     "tweetnacl": "^1.0.3"
   },
