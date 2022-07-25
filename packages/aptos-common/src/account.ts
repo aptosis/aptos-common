@@ -1,7 +1,6 @@
 import type { HexEncodedBytes } from "@aptosis/aptos-api";
 import type { HexStringLike, MaybeHexString, Signer } from "@movingco/core";
 import { Address, HexString, PublicKey } from "@movingco/core";
-import { Buffer } from "buffer/index.js";
 import * as Nacl from "tweetnacl";
 
 /**
@@ -90,11 +89,9 @@ export class Account implements Signer {
    * @param buffer A buffer to sign
    * @returns A signature HexString
    */
-  signBuffer(buffer: Buffer): HexString {
+  signBufferSync(buffer: Uint8Array): Uint8Array {
     const signature = Nacl.sign(buffer, this.signingKey.secretKey);
-    return HexString.ensure(
-      Buffer.from(signature).toString("hex").slice(0, 128)
-    );
+    return signature.slice(0, 64);
   }
 
   /**
@@ -103,12 +100,12 @@ export class Account implements Signer {
    * @returns A signature HexString
    */
   signHexString(hexString: MaybeHexString): HexString {
-    const toSign = HexString.ensure(hexString).toBuffer();
-    return this.signBuffer(toSign);
+    const toSign = HexString.ensure(hexString).toUint8Array();
+    return HexString.fromUint8Array(this.signBufferSync(toSign));
   }
 
   signData(buffer: Uint8Array): Promise<Uint8Array> {
-    return Promise.resolve(this.signBuffer(Buffer.from(buffer)).toUint8Array());
+    return Promise.resolve(this.signBufferSync(buffer));
   }
 
   /**
