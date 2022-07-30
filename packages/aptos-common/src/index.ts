@@ -1,7 +1,7 @@
 export * from "./account.js";
 export * from "./client/index.js";
+export * from "./nativeCoin.js";
 export * from "./signingMessage.js";
-export * from "./testCoin.js";
 
 // re-exports for convenience
 // One should prefer to import these packages directly
