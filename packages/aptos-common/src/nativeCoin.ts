@@ -6,7 +6,7 @@ const NATIVE_COIN_INFO: CoinInfo = {
   symbol: "APTOS",
   logoURI:
     "https://raw.githubusercontent.com/aptosis/aptosis-coin-list/master/assets/devnet/apt.svg",
-  decimals: 4,
+  decimals: 8,
   address: "0x1::aptos_coin::AptosCoin",
   chainId: ChainId.AptosDevnet,
 };
