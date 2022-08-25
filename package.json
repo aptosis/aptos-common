@@ -5,7 +5,7 @@
   ],
   "type": "module",
   "name": "workspace",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "packageManager": "yarn@3.2.3",
   "devDependencies": {
     "@jest/types": "^29.0.0",
