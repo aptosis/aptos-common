@@ -1,4 +1,4 @@
-import type { HexEncodedBytes } from "@aptosis/aptos-api";
+import type { HexEncodedBytes } from "@aptosis/aptos-api-raw";
 import type { HexStringLike, MaybeHexString, Signer } from "@movingco/core";
 import { Address, HexString, PublicKey } from "@movingco/core";
 import * as Nacl from "tweetnacl";

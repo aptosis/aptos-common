@@ -33,20 +33,20 @@
     "url": "https://github.com/aptosis/aptos-common/issues"
   },
   "dependencies": {
-    "@aptosis/aptos-api": "^0.1.1",
-    "@aptosis/aptos-client": "^0.1.1",
-    "@aptosis/aptos-typed-api": "^0.1.1",
-    "@aptosis/faucet-client": "^0.1.1",
-    "@movingco/core": "^0.4.0",
-    "@movingco/leb128": "^0.4.0",
-    "@movingco/sha3": "^0.4.0",
+    "@aptosis/aptos-api-raw": "^0.2.1",
+    "@aptosis/aptos-client": "^0.2.1",
+    "@aptosis/aptos-typed-api": "^0.2.1",
+    "@aptosis/faucet-client": "^0.2.1",
+    "@movingco/core": "^0.4.1",
+    "@movingco/leb128": "^0.4.1",
+    "@movingco/sha3": "^0.4.1",
     "@vespaiach/axios-fetch-adapter": "^0.3.0",
     "axios": "^0.27.2",
     "tslib": "^2.4.0",
     "tweetnacl": "^1.0.3"
   },
   "devDependencies": {
-    "@saberhq/tsconfig": "^2.0.3",
+    "@saberhq/tsconfig": "^2.0.4",
     "jsbi": "^4.3.0",
     "typescript": "^4.7.4"
   },

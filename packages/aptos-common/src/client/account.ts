@@ -1,5 +1,4 @@
-import type { AptosAPI, AptosAPIResponse } from "@aptosis/aptos-client";
-import { raiseForStatus } from "@aptosis/aptos-client";
+import type { AptosAPI } from "@aptosis/aptos-client";
 import type { AccountMetadata } from "@aptosis/aptos-typed-api";
 import type { MaybeHexString } from "@movingco/core";
 import { HexString } from "@movingco/core";
@@ -20,9 +19,7 @@ export async function getAccount(
   api: AptosAPI,
   accountAddress: MaybeHexString
 ): Promise<AccountMetadata> {
-  const response = (await api.accounts.getAccount(
+  return (await api.accounts.getAccount(
     HexString.ensure(accountAddress).hex()
-  )) as AptosAPIResponse<AccountMetadata>;
-  raiseForStatus(200, response);
-  return response.data;
+  )) as AccountMetadata;
 }
